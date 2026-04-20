@@ -16,7 +16,4 @@ public abstract class StewDecorator implements INordicStew{
         return stew.getPrice();
     }
 
-    protected INordicStew getStew(){
-        return stew;
-    }
 }

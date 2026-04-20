@@ -7,11 +7,11 @@ public class VenisonDecorator extends StewDecorator{
 
     @Override
     public String getDescription(){
-        return getStew().getDescription() + " + двойная порция оленины";
+        return super.getDescription() + " + двойная порция оленины";
     }
 
     @Override
     public int getPrice(){
-        return getStew().getPrice() + 20;
+        return super.getPrice() + 20;
     }
 }
