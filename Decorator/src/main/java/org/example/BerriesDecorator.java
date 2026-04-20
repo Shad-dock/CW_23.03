@@ -7,11 +7,11 @@ public class BerriesDecorator extends StewDecorator{
 
     @Override
     public String getDescription(){
-        return getStew().getDescription() + " + снежные ягоды";
+        return super.getDescription() + " + снежные ягоды";
     }
 
     @Override
     public int getPrice(){
-        return getStew().getPrice() + 5;
+        return super.getPrice() + 5;
     }
 }

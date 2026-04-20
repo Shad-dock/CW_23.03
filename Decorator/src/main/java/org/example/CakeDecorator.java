@@ -7,11 +7,11 @@ public class CakeDecorator extends StewDecorator{
 
     @Override
     public String getDescription(){
-        return getStew().getDescription() + " + нордская лепешка";
+        return super.getDescription() + " + нордская лепешка";
     }
 
     @Override
     public int getPrice(){
-        return getStew().getPrice() + 7;
+        return super.getPrice() + 7;
     }
 }
