@@ -1,7 +1,7 @@
 package org.example;
 
 public abstract class StewDecorator implements INordicStew{
-    protected INordicStew stew;
+    private INordicStew stew;
     public StewDecorator(INordicStew stew){
         this.stew = stew;
     }
@@ -14,5 +14,9 @@ public abstract class StewDecorator implements INordicStew{
     @Override
     public int getPrice(){
         return stew.getPrice();
+    }
+
+    protected INordicStew getStew(){
+        return stew;
     }
 }
