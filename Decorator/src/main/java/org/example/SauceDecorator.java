@@ -8,11 +8,11 @@ public class SauceDecorator extends StewDecorator{
 
     @Override
     public String getDescription(){
-        return stew.getDescription() + " + огненный соус";
+        return getStew().getDescription() + " + огненный соус";
     }
 
     @Override
     public int getPrice(){
-        return stew.getPrice() + 10;
+        return getStew().getPrice() + 10;
     }
 }
